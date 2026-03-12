@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: 3.12
-  version: 0.3.1
+  version: "0.4.0"
 
 package:
   name: sarkit-convert
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sarkit-convert/sarkit_convert-${{ version }}.tar.gz
-  sha256: 9447218f80ce3417d0c7fac604cfe135b944592d72079fad11d98f0dbcbb3a60
+  sha256: ffd7b83537df116a58007a91a963f57b68a191fda474f272eaec73eb9b1312f4
 
 build:
   number: 0
@@ -52,10 +52,10 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-    - python -m sarkit_convert.cosmo --help
-    - python -m sarkit_convert.iceye --help
-    - python -m sarkit_convert.sentinel --help
-    - python -m sarkit_convert.terrasar --help
+      - python -m sarkit_convert.cosmo --help
+      - python -m sarkit_convert.iceye --help
+      - python -m sarkit_convert.sentinel --help
+      - python -m sarkit_convert.terrasar --help
 
 about:
   summary: Python library for converting SAR data to standard formats.
