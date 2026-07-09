@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: sarkit-convert
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sarkit-convert/sarkit_convert-${{ version }}.tar.gz
-  sha256: ffd7b83537df116a58007a91a963f57b68a191fda474f272eaec73eb9b1312f4
+  sha256: af8f72e3987a51cf0bc18f0bc7ae5f9bd76df364c9fbc24937b4c246ae3c986e
 
 build:
   number: 0
