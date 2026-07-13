@@ -46,16 +46,20 @@ tests:
         - sarkit_convert.cosmo
         - sarkit_convert.create_arp_poly
         - sarkit_convert.iceye
+        - sarkit_convert.nisar
         - sarkit_convert.sentinel
         - sarkit_convert.sidd_metadata
         - sarkit_convert.terrasar
+        - sarkit_convert.tle
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
       - python -m sarkit_convert.cosmo --help
       - python -m sarkit_convert.iceye --help
+      - python -m sarkit_convert.nisar --help
       - python -m sarkit_convert.sentinel --help
       - python -m sarkit_convert.terrasar --help
+      - python -m sarkit_convert.tle --help
 
 about:
   summary: Python library for converting SAR data to standard formats.
